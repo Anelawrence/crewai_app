@@ -6,11 +6,8 @@ from langchain.agents import Tool
 import gradio as gr
 
 
-#os.environ["OPENAI_API_KEY"] = "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"
 ollama_openhermes = Ollama(model='openhermes')
-
 duckduckgo_search = DuckDuckGoSearchRun()
-
 
 def create_crewai_setup(subject):
     # Define Agents
